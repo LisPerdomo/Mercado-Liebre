@@ -8,6 +8,9 @@ main section article img {
 .logoinicio{
     width: 20%;
 }
+.banner{
+    width: 100%;
+}
 #Menú{
     text-align: center;
 }
