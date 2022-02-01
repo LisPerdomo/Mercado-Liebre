@@ -8,7 +8,9 @@ app.get('/', (req,res)=>{
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
 
-app.listen(3030,()=> console.log('servidor en funcionamiento'));
+app.listen(process.env.PORT || 3000, function(){
+    console.log('Servidor corriendo en el puerto 3000');
+});
 
 
 
