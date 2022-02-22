@@ -1,0 +1,267 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:  #ebebeb;
+}
+
+p{
+    font-size: 12px;
+}
+
+section {
+    font-size:16px
+    }
+    
+    a.logo {
+    padding:10px;
+    width:50%;
+    }
+    .copy-header {
+    font-weight: 400;
+    text-align: center;
+    }
+    
+    header .form .input{
+    display:block;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    }
+    header input {
+    display:block;
+    outline:none;
+    line-height: 1.2em;
+    border:none;
+    width:250px;
+    font-size: 12pt;
+    }
+    .main-header-top-bar {
+    display:flex;
+    
+    }
+    
+    header div div .form {
+    display: flex;
+    margin:auto;
+    padding: 3px;
+    font-size:12px;
+    width:50%;
+    background-color: white;
+    }
+    .form i {
+    font-size:20px;
+    }
+    
+    header {
+    background-color: #EAC926;
+    padding:20px;
+    }
+    .nav-bar {
+    display:flex;
+    list-style:none;
+    }
+    .login-bar i {
+        margin: 5px;
+    }
+    .site-bar {
+    margin-bottom:15px;
+    }
+    .burger-menu {
+    text-align:center;
+    background-color:rgb(50, 106, 218);
+    margin:auto;
+    display:block;
+    max-width:50px;
+    color:white;
+    border-radius: 8px;
+    padding:15px 0px;
+    font-size:18px;
+    }
+
+/************************************
+*************LOGIN******************/
+.container-login {
+    display: flex;
+    width: auto;
+    min-height: 400px;
+    min-width: 400px;
+    margin: 300px;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container-login-form {
+    display: inline-block;
+    background-color: rgb(225, 222, 222);
+    width: auto;
+    min-height: 400px;
+    min-width: 400px;
+    margin: 300px;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.icon-person {
+    font-size:80px;
+    color: rgb(50, 106, 218);
+    display: inline-block;
+    align-items: center;
+}
+.icon-person p {
+    font-size:50px;
+    display: inline-block;
+    justify-content:center;
+    align-items: center;
+}
+.button-login {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 106, 218);
+}
+.button-login a {
+    text-decoration: none;
+    color: rgb(255, 249, 249);
+}
+.button-login:hover{
+    background-color:rgb(19, 77, 193);
+}
+/********************************
+***FORMULARIO DE REGISTRO********/
+
+.container-registro {
+    display: flex;
+    background-color: rgb(225, 222, 222);
+    width: auto;
+    min-height: 400px;
+    min-width: 400px;
+    margin: 300px;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.form-control {
+    margin-bottom: 15px;
+}
+.container-register-form {
+    display: inline-block;
+    background-color: rgb(225, 222, 222);
+    width: auto;
+    min-height: 200px;
+    min-width: 400px;
+    margin: 100px;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.form-control label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+    background-color:rgb(50, 106, 218);
+}
+.button-reset {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+    background-color:rgb(181, 6, 6);
+}
+
+.pregunta-registro p{
+    margin:5px;
+}
+input {
+    border: 8px solid currentcolor;
+    color: black;
+  }
+
+input:invalid {
+    border: 1px solid silver;
+  }
+
+input:invalid:required {
+    border-radius: 2px;
+}
+
+input:invalid:focus {
+    background-color: #ffffff;
+    content: 'Insuficientes caracteres';
+    color: rgb(0, 0, 0);
+
+  }
+
+  input:valid{
+      border: 2px #f85104
+  }
+
+  input:valid:focus{
+      color: rgb(0, 0, 0);
+      background-color:#ffffff;
+  }
+
+/*--TABLETS--*/
+@media (min-width:361px){
+    .top-header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header nav {
+       display: none;
+       justify-content: space-between;
+    }
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header nav ul li{
+        margin: 0 10px;
+    }
+    .burger-menu{
+        display: flex;
+    }
+}
+
+/*--DESKTOP--*/
+@media (min-width:769px){
+    header nav {
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+}

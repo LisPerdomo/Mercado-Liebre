@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a MELI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/loginStyles.css">
+    
+</head>
+<body>
+    <header>
+<div class="top-header">
+    <div class="main-header-top-bar">
+      <a href="/">
+        <img src="./images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" class="logo">
+      </a>
+        <form  class="form" action="#" method="GET"> <!-- sobre action/method= /*https://www.w3schools.com/tags/att_form_method.asp*/-->
+        <input type="text" placeholder="Buscar productos, marcas y más">
+        <i class="fa fa-search"></i>
+        </form>
+    </div>
+        <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+    </div>
+    <nav class="nav-bar">
+    <ul class="site-bar" type="circle">
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+    </ul>
+    <ul class="login-bar" type="circle">
+        <li><a href="/register">Creá tu cuenta</a><i class="fas fa-address-book"></i></li>
+        <li><a href="/login"">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+        <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+    </ul>
+    </nav>
+    <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+</div>
+    </header>
+
+    <div class="container-registro">
+      <form action="/" method="get" class="container-register-form">
+        <div class="icon-person">
+          <i class="fas fa-id-card"></i>
+          <p>Registro</p>
+        </div>
+        <p class="form-control">
+          <label for="Nombre">Nombre y Apellido</label>
+          <input
+            type="text"
+            name="Nombre"
+            id="Nombre"
+            class="control"
+            minlength="10"
+            data-error="Dato no valido"
+            data-success="Correcto"
+            required
+          />
+        </p>
+        <p class="form-control">
+          <label for="usuario">Nombre de usuari@</label>
+          <input
+            type="text"
+            name="usuario"
+            id="usuario"
+            class="control"
+            minlength="5"
+            data-error="Dato no valido"
+            data-success="Correcto"
+            required
+          />
+        </p>
+        <p class="form-control">
+          <label>Fecha de nacimiento</label>
+          <input
+            type="date"
+            name="cumpleaños"
+            class="control"
+            value="YYYY-MM-DD"
+            min="1940-01-01"
+            max="2000-01-01"
+            required
+          />
+        </p>
+        <p class="form-control">
+          <label for="domicilio">Domicilio</label>
+          <input
+            type="text"
+            name="domicilio"
+            id="domicilio"
+            class="control"
+            required
+          />
+        </p>
+        <p class="form-control">
+          <label for="perfil">Perfil de usuario</label>
+          <input
+            type="radio"
+            name="perfil"
+            id="perfil"
+            value="Comprar"
+          />Comprar
+          <input type="radio" name="perfil" id="perfil" value="Vender" />Vender
+        </p>
+        <p class="form-control">
+          <label>Categoria de interes</label>
+          <input type="checkbox" name="interes" value="electro" />Electro
+
+          <input type="checkbox" name="interes" value="moda" />Moda
+
+          <input type="checkbox" name="interes" value="hogar" />Hogar
+
+          <input type="checkbox" name="interes" value="jugueteria" />Jugueteria
+
+          <input type="checkbox" name="interes" value="vida-sana" />Vida Sana
+        </p>
+        <p class="form-control">
+          <label>Foto de usuario</label>
+          <input type="file" name="picture" class="control" accept=".jpg" />
+        </p>
+        <p class="form-control">
+          <label for="password">Contraseña</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="control"
+            required
+          />
+        </p>
+        <p class="form-control">
+          <label for="confirm-pass">Confirmacion de contraseña</label>
+          <input
+            type="password"
+            name="confirm-pass"
+            id="confirm-pass"
+            class="control"
+            required
+          />
+        </p>
+        <button type="submit" class="button">Enviar</button>
+        <button type="reset" class="button-reset">Borrar</button>
+        <div class="pregunta-registro">
+          <p>¿Ya tienes una cuenta?</p>
+          <p>
+            ingresa <strong><a href="/login">Aquí</a></strong>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
